@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme {
+    --font-ox-bold-bc: "ox-bold-bc";
+}
+
+@font-face {
+    font-family: ox-bold-bc;
+    src: url("./fonts/ox-bold-bc.woff") format("woff");
+}

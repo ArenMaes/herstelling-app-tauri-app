@@ -1,0 +1,5 @@
+{
+    "editor.detectIndentation": false,
+    "eslint.useFlatConfig": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+}
