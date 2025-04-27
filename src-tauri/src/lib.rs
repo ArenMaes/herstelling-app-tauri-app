@@ -1,4 +1,6 @@
-// Learn more about Tauri commands at https://tauri.app/develop/calling-rust/
+mod commands;
+mod models;
+
 #[tauri::command]
 fn get_os_name() -> String {
     #[cfg(target_os = "windows")]
@@ -34,6 +36,7 @@ pub fn run() {
         .plugin(tauri_plugin_opener::init())
         .invoke_handler(tauri::generate_handler![
             get_os_name,
+            commands::list_projects
         ])
         .run(tauri::generate_context!())
         .expect("error while running tauri application");
